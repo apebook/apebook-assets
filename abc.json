@@ -1,0 +1,10 @@
+{
+    "name": "apebook",
+    "version": "0.0.1",
+    "type": "bee",
+    "kissy":"6.0.0",
+    "builder": "@ali/builder-bee",
+    "options": {
+
+    }
+}

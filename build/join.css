@@ -1,0 +1,19 @@
+body {
+  background: url(cover/2.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.join-wrapper {
+  padding-top: 100px;
+}
+.join-wrapper h3 {
+  color: #333;
+}
+.join-wrapper form {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}

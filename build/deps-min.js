@@ -1,1 +1,1 @@
-KISSY.config("requires",{"apebook/index":["./register/form"],"apebook/register/form":["node"]});
+KISSY.config("requires",{"apebook/book":["node","kg/stepbar/2.1.0/index","kg/stepbar/2.1.0/stepbar.css","kg/vc-notifications/1.0.2/index"],"apebook/index":["./register/form"],"apebook/register/form":["node"]});
