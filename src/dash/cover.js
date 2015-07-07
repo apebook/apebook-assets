@@ -7,7 +7,7 @@ module.exports = function(){
     if(!$btn.length) return false;
 
 
-    S.use('kg/uploader/3.0.5/index,kg/uploader/3.0.5/themes/singleImageUploader/index,kg/uploader/3.0.5/themes/singleImageUploader/style.css', function (S, Uploader,SingleImageUploader) {
+    S.use('kg/uploader/3.0.5/index,kg/uploader/3.0.5/themes/singleImageUploader/index', function (S, Uploader,SingleImageUploader) {
         //上传组件插件
         var plugins = 'kg/uploader/3.0.5/plugins/auth/auth,' +
             'kg/uploader/3.0.5/plugins/urlsInput/urlsInput,' +
@@ -18,7 +18,10 @@ module.exports = function(){
         S.use(plugins,function(S,Auth,UrlsInput,ProBars,Filedrop,Preview){
             var uploader = new Uploader('#J_UploaderBtn',{
                 //处理上传的服务器端脚本路径
-                action:"/api/book/cover"
+                action:"/api/book/cover",
+                data:{
+                    id:$('.J_BookId').val()
+                }
             });
             //使用主题
             uploader.theme(new SingleImageUploader({
@@ -34,6 +37,7 @@ module.exports = function(){
                 //图片预览
                 .plug(new Preview())
             ;
+            uploader.restore();
         });
     })
 
