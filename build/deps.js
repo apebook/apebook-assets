@@ -6,8 +6,14 @@ KISSY.config('requires',{
         "kg/stepbar/2.1.0/stepbar.css",
         "kg/vc-notifications/1.0.2/index"
     ],
+    "apebook/dash": [
+        "./dash/cover"
+    ],
     "apebook/index": [
         "./register/form"
+    ],
+    "apebook/dash/cover": [
+        "node"
     ],
     "apebook/register/form": [
         "node"

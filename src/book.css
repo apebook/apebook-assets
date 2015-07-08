@@ -43,17 +43,20 @@
 .book-wrapper .btn {
   display: inline-block;
 }
-.address {
+.book-form .form-control {
+  width: 40%;
+}
+.book-form .address {
   display: inline-block;
-  width: 200px;
+  width: 20%;
   border-radius: 0;
   font-size: 14px !important;
   line-height: 26px;
   margin-top: -2px;
 }
-.address-input {
+.book-form .address-input {
   display: inline-block;
-  width: 200px;
+  width: 20%;
   margin-left: -5px;
 }
 .stepbar {
