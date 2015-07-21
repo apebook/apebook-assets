@@ -29,7 +29,6 @@ module.exports = function(){
     $publishBtn.on('click',function(){
         var status = $publishBtn.attr('data-status');
         io.post('/api/book/post',{id:$('.J_BookId').val(),openStatus:status}).then(function(result){
-            debugger;
             var data = result[0];
             if(!data.success){
                 notify.notify({boxCls:'warn',mPartMsg: data.msg});

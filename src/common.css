@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1436404675_0641584.eot');
-  src: url('//at.alicdn.com/t/font_1436404675_0641584.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1436404675_0641584.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1436404675_0641584.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1436404675_0641584.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1436834439_9974155.eot');
+  src: url('//at.alicdn.com/t/font_1436834439_9974155.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1436834439_9974155.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1436834439_9974155.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1436834439_9974155.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
@@ -69,7 +69,6 @@ header {
 }
 .logo {
   margin: 0;
-  margin-left: 20px;
   padding: 0 20px;
   line-height: 60px;
   color: #fff;
@@ -171,6 +170,27 @@ header {
   padding: 0;
   margin: 0;
 }
+.bs-callout {
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.bs-callout i {
+  margin-right: 10px;
+}
+.bs-callout-danger {
+  border-left-color: #ce4844;
+}
+.bs-callout-info {
+  border-left-color: #5cb85c;
+}
+.bs-callout-info i {
+  color: #5cb85c;
+  margin-right: 10px;
+}
 .my-nav {
   position: relative;
   overflow: hidden;
@@ -212,4 +232,33 @@ header {
 .my-nav .current a,
 .my-nav li:hover a {
   color: #fff;
+}
+.sidebar-wrapper {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  overflow-y: auto;
+  background: #F5F5F5;
+}
+.sidebar-wrapper ul li {
+  margin-top: 10px;
+}
+.sidebar-wrapper ul a {
+  color: #74777b;
+}
+.sidebar-wrapper ul .current a {
+  background-color: #eee;
+}
+.sidebar-wrapper ul .iconfont {
+  margin-right: 10px;
+}
+.dash-main {
+  margin-left: 240px;
+}
+.dash-main .dash-wrapper {
+  margin-top: 40px;
+  margin-right: 20px;
 }

@@ -81,6 +81,7 @@ button::-moz-focus-inner {
   display: block;
   margin-top: 10px;
   line-height: 32px;
+  position: relative;
 }
 .singleImageUploader-button:hover {
   text-decoration: none;
@@ -136,6 +137,27 @@ button::-moz-focus-inner {
   margin: 0;
   padding-left: 10px;
 }
+.dash-header {
+  border-bottom: 1px solid #ccc ;
+  margin-bottom: 20px;
+  position: relative;
+}
+.dash-header h3 {
+  margin-bottom: 20px;
+}
+.dash-header .button-wrapper {
+  width: 260px;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.dash-header .button-wrapper .btn {
+  width: auto;
+}
+.dash-header .status-wrapper {
+  margin-bottom: 10px;
+}
 .tiles {
   margin-right: -1px;
 }
@@ -160,4 +182,8 @@ button::-moz-focus-inner {
 .tiles .tile:hover {
   text-decoration: none;
   border-color: #46b8da;
+}
+.dash-main form {
+  display: block;
+  width: 50%;
 }

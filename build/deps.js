@@ -7,13 +7,19 @@ KISSY.config('requires',{
         "kg/vc-notifications/1.0.2/index"
     ],
     "apebook/dash": [
-        "./dash/cover"
+        "./dash/cover",
+        "./dash/update-book"
     ],
     "apebook/index": [
         "./register/form"
     ],
     "apebook/dash/cover": [
         "node"
+    ],
+    "apebook/dash/update-book": [
+        "node",
+        "io",
+        "kg/notification/1.0.0/"
     ],
     "apebook/register/form": [
         "node"

@@ -81,6 +81,7 @@ button::-moz-focus-inner {
   display: block;
   margin-top: 10px;
   line-height: 32px;
+  position: relative;
 }
 .singleImageUploader-button:hover {
   text-decoration: none;
