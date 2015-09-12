@@ -3,6 +3,7 @@ section.detail-wrapper{
   .detail-main{
     margin-left: 20px;
     margin-top: 30px;
+    position: relative;
   }
   h2{
     margin-left: -10px;
@@ -10,22 +11,11 @@ section.detail-wrapper{
   .desc{
     margin: 20px 0;
   }
-  .author-wrapper{
-    height: 74px;
-    width: 424px;
-    a{
-      color: #777;
-    }
-    img{
-      margin-top: -20px;
-      margin-right: 20px;
-    }
-    .email{
-      color: #999;
-    }
-  }
   .details-meta{
     margin-left: 5px;
+    dd{
+      margin-top: 10px;
+    }
   }
   .btn-wrapper{
     margin-bottom: 20px;
@@ -39,4 +29,23 @@ section.detail-wrapper{
       font-size: 20px;
     }
   }
+}
+.cover{
+  background: url("http://a.apebook.org/avatar/default-avatar.png") center 120px no-repeat #fff;
+}
+.cover-wrapper{
+  position: relative;
+  h4{
+    position: absolute;
+    top: 70px;
+    left:15px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.github-btn{
+  position: absolute;
+  border: none;
+  top: 0;
+  right: 0;
 }
