@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1436404675_0641584.eot');
-  src: url('//at.alicdn.com/t/font_1436404675_0641584.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1436404675_0641584.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1436404675_0641584.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1436404675_0641584.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1436834439_9974155.eot');
+  src: url('//at.alicdn.com/t/font_1436834439_9974155.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1436834439_9974155.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1436834439_9974155.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1436834439_9974155.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
@@ -69,13 +69,11 @@ header {
 }
 .logo {
   margin: 0;
-  margin-left: 20px;
   padding: 0 20px;
   line-height: 60px;
   color: #fff;
   background: url(//img.apebook.org/logo.png) 0 0 no-repeat #5bb793;
-  -webkit-box-shadow: inset 0 0 10px #489174;
-          box-shadow: inset 0 0 10px #489174;
+  box-shadow: inset 0 0 10px #489174;
   display: inline-block;
   text-indent: -200px;
   width: 220px;
@@ -88,8 +86,7 @@ header {
   height: 100%;
 }
 .logo:hover {
-  -webkit-box-shadow: inset 0 0 10px #333;
-          box-shadow: inset 0 0 10px #333;
+  box-shadow: inset 0 0 10px #333;
 }
 .logo a:hover {
   text-decoration: none;
@@ -105,6 +102,9 @@ header {
 }
 .right-nav .btn {
   width: 60px;
+}
+.right-nav .name img {
+  margin-right: 10px;
 }
 .right-nav a,
 .left-nav a {
@@ -151,14 +151,17 @@ header {
   cursor: pointer;
 }
 .auth-msg {
-  padding: 10px;
   margin-top: 10px;
-  border: none;
-  background-color: #D95C5C;
-  color: #fff;
+  padding: 10px 36px;
+  font-size: 12px;
+  line-height: 13px;
+  color: #333;
+  background: url("//gtms02.alicdn.com/tps/i2/TB12WquGVXXXXcUaXXX7ayhZpXX-64-1800.png") no-repeat;
 }
-.auth-msg .iconfont {
-  font-size: 1.1em;
+.auth-error {
+  border: 1px solid #ffe1cc;
+  background-position: 8px 6px;
+  background-color: #fff2f2;
 }
 .btn-block + .btn-block {
   margin-top: 0;
@@ -170,6 +173,43 @@ header {
 .vc-notify-box .box-wrap .msg {
   padding: 0;
   margin: 0;
+}
+.bs-callout {
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.bs-callout i {
+  margin-right: 10px;
+}
+.bs-callout-danger {
+  border-left-color: #ce4844;
+}
+.bs-callout-info {
+  border-left-color: #5cb85c;
+}
+.bs-callout-info i {
+  color: #5cb85c;
+  margin-right: 10px;
+}
+.setting-form h3 {
+  margin-bottom: 20px;
+}
+.setting-form label {
+  margin-bottom: 10px;
+}
+.setting-form .input-lg {
+  padding: 5px 10px;
+  height: 40px;
+}
+.setting-form .btn-lg {
+  margin-top: 30px;
+}
+.setting-form .form-group {
+  margin-bottom: 24px;
 }
 .my-nav {
   position: relative;
@@ -212,4 +252,40 @@ header {
 .my-nav .current a,
 .my-nav li:hover a {
   color: #fff;
+}
+.sidebar-wrapper {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  overflow-y: auto;
+  background: #F5F5F5;
+}
+.sidebar-wrapper ul li {
+  margin-top: 10px;
+}
+.sidebar-wrapper ul a {
+  color: #74777b;
+}
+.sidebar-wrapper ul .current a {
+  background-color: #eee;
+}
+.sidebar-wrapper ul .iconfont {
+  margin-right: 10px;
+}
+.dash-main {
+  margin-left: 240px;
+}
+.dash-main .dash-wrapper {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.panel {
+  background: #fff;
+  padding: 10px;
+}
+.f-l {
+  float: left;
 }

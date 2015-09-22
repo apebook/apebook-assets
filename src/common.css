@@ -73,8 +73,7 @@ header {
   line-height: 60px;
   color: #fff;
   background: url(//img.apebook.org/logo.png) 0 0 no-repeat #5bb793;
-  -webkit-box-shadow: inset 0 0 10px #489174;
-          box-shadow: inset 0 0 10px #489174;
+  box-shadow: inset 0 0 10px #489174;
   display: inline-block;
   text-indent: -200px;
   width: 220px;
@@ -87,8 +86,7 @@ header {
   height: 100%;
 }
 .logo:hover {
-  -webkit-box-shadow: inset 0 0 10px #333;
-          box-shadow: inset 0 0 10px #333;
+  box-shadow: inset 0 0 10px #333;
 }
 .logo a:hover {
   text-decoration: none;
@@ -104,6 +102,9 @@ header {
 }
 .right-nav .btn {
   width: 60px;
+}
+.right-nav .name img {
+  margin-right: 10px;
 }
 .right-nav a,
 .left-nav a {
@@ -150,14 +151,17 @@ header {
   cursor: pointer;
 }
 .auth-msg {
-  padding: 10px;
   margin-top: 10px;
-  border: none;
-  background-color: #D95C5C;
-  color: #fff;
+  padding: 10px 36px;
+  font-size: 12px;
+  line-height: 13px;
+  color: #333;
+  background: url("//gtms02.alicdn.com/tps/i2/TB12WquGVXXXXcUaXXX7ayhZpXX-64-1800.png") no-repeat;
 }
-.auth-msg .iconfont {
-  font-size: 1.1em;
+.auth-error {
+  border: 1px solid #ffe1cc;
+  background-position: 8px 6px;
+  background-color: #fff2f2;
 }
 .btn-block + .btn-block {
   margin-top: 0;
@@ -190,6 +194,22 @@ header {
 .bs-callout-info i {
   color: #5cb85c;
   margin-right: 10px;
+}
+.setting-form h3 {
+  margin-bottom: 20px;
+}
+.setting-form label {
+  margin-bottom: 10px;
+}
+.setting-form .input-lg {
+  padding: 5px 10px;
+  height: 40px;
+}
+.setting-form .btn-lg {
+  margin-top: 30px;
+}
+.setting-form .form-group {
+  margin-bottom: 24px;
 }
 .my-nav {
   position: relative;
@@ -261,4 +281,11 @@ header {
 .dash-main .dash-wrapper {
   margin-top: 40px;
   margin-right: 20px;
+}
+.panel {
+  background: #fff;
+  padding: 10px;
+}
+.f-l {
+  float: left;
 }

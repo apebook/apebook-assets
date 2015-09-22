@@ -97,7 +97,7 @@ button::-moz-focus-inner {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url("//cover.apebook.org/suggest.png") 0 0 no-repeat;
+  background: url("//cover.apebook.org/cover.png") 0 0 no-repeat;
   position: relative;
 }
 .singleImageUploader-queue .uploader-img img {

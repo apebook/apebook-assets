@@ -1,7 +1,6 @@
 body {
   background: url(//img.apebook.org/2.jpg) 0 0 no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 .join-wrapper {
   padding-top: 100px;
