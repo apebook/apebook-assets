@@ -19,5 +19,18 @@ module.exports = function(){
         });
         return defer.promise;
     });
+    auth.register('exist-name', function (value,attr,defer,field) {
+        var self = this;
+        io.getJSON("/api/book/exist-name",{name:value}).then(function(result){
+            var data = result[0];
+            if(data.exist){
+                defer.reject(self);
+            }else{
+                defer.resolve(self);
+
+            }
+        });
+        return defer.promise;
+    });
     auth.render();
 };
