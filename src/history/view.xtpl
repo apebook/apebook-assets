@@ -1,0 +1,27 @@
+<section class="history-list">
+{{#each(historys)}}
+  {{#if(this)}}
+<div class="event row">
+<div class="col-md-1 event-icon-wrapper">
+<i class="iconfont">
+{{#if(this.event === 'github')}}
+  &#xe60c;
+{{elseif(this.event === 'create')}}
+  &#xe602;
+{{elseif(this.event === 'action')}}
+  &#xe615;
+{{elseif(this.event === 'success')}}
+  &#xe606;
+{{elseif(this.event === 'error')}}
+  &#xe608;
+{{/if}}
+</i>
+</div>
+  <div class="col-md-11">
+    <p class="event-time">{{this.create}}</p>
+    <p>{{this.user}} {{this.content}}</p>
+  </div>
+</div>
+  {{/if}}
+{{/each}}
+</section>
