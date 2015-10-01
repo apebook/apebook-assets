@@ -25,6 +25,8 @@ module.exports = function() {
         start += limit;
         if(data.result.length< limit){
           $more.hide();
+        }else{
+          $more.css('display','block');
         }
       }
     });
