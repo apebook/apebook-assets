@@ -10,7 +10,7 @@ module.exports = function(){
     $btn.on('click',function(){
         if(update) return false;
         notify.notify({boxCls:'warning',mPartMsg: "更新中请稍等五分钟"});
-        $btn.text('更新中...');
+        $btn.text('更新书籍中...');
         update = true;
         io.post('/api/book/sync',{id:$('.J_BookId').val()}).then(function(result){
             var data = result[0];
