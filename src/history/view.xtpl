@@ -19,7 +19,7 @@
 </div>
   <div class="col-md-11">
     <p class="event-time">{{this.create}}</p>
-    <p>{{this.user}} {{this.content}}</p>
+    <p>{{this.user}} {{{this.content}}}</p>
   </div>
 </div>
   {{/if}}
