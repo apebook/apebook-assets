@@ -1,6 +1,6 @@
 .register-pannel {
   min-height: 600px;
-  background: url(cover/1.jpg) 0 0 no-repeat;
+  background: url(//a.apebook.org/cover/1.jpg) 0 0 no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -35,7 +35,7 @@
   border-radius: 4px !important;
   margin-top: 16px;
   padding: 8px 10px !important;
-  width: 160px;
+  width: 180px;
 }
 /* ///////////////////////////////////////////////////
 
@@ -58,7 +58,9 @@ Table of Contents
 	1. container
 */
 .book-list {
-  margin-top: 20px;
+  width: 900px;
+  margin: 60px auto;
+  margin-bottom: 0;
 }
 .book-wrapper {
   min-height: 300px;
@@ -567,10 +569,13 @@ Table of Contents
   line-height: 30px;
   margin-bottom: 10px;
 }
+section.my-wrapper {
+  margin-top: 60px;
+}
 .my-books {
-  height: 160px;
   overflow: hidden;
   width: 100%;
+  margin-top: 20px;
 }
 .my-books li {
   float: left;
@@ -614,4 +619,25 @@ Table of Contents
 .my-books .create-wrapper .iconfont {
   font-size: 3em;
   color: rgba(0, 0, 0, 0.6);
+}
+.introduce-wrapper {
+  padding: 80px;
+}
+.introduce-wrapper .row {
+  width: 1200px;
+  margin: 0 auto;
+}
+.introduce-wrapper h3 {
+  color: #000;
+  margin-bottom: 30px;
+}
+.introduce-wrapper b {
+  color: #000;
+}
+.introduce-wrapper .btn {
+  margin-top: 20px;
+  width: 200px !important;
+}
+.white-wrapper {
+  background: #fff;
 }

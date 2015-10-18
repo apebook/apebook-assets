@@ -1,0 +1,22 @@
+.sidebar-wrapper {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  overflow-y: auto;
+  background: #F5F5F5;
+}
+.sidebar-wrapper ul li {
+  margin-top: 10px;
+}
+.sidebar-wrapper ul a {
+  color: #74777b;
+}
+.sidebar-wrapper ul .current a {
+  background-color: #eee;
+}
+.sidebar-wrapper ul .iconfont {
+  margin-right: 10px;
+}

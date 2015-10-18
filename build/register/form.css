@@ -1,8 +1,7 @@
 .register-pannel {
   min-height: 600px;
   background: url(cover/1.jpg) 0 0 no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   position: relative;
 }
 .words {
@@ -22,6 +21,7 @@
   padding: 25px;
   border-radius: 10px;
   margin: 70px auto 0;
+  width: 800px;
 }
 .register-form input {
   border-radius: 4px;

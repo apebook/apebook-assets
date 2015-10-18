@@ -1,0 +1,1 @@
+KISSY.add("apebook/detail",["node"],function(r,a,t,n){var e,u,o=a("node");e=function(r){var a=o.all;return r=function(){var r=a(".J_Summary").all("a");if(!r.length)return!1;var t=a(".J_Summary").attr("data-url");r.each(function(r){var a=r.attr("href");a=a.replace(".md",".html"),r.attr("href",t+"/"+a)})}}(),u=function(r){var a=e;return a(),r}(),n.exports=u});

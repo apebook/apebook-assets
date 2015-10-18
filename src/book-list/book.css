@@ -19,7 +19,9 @@ Table of Contents
 	1. container
 */
 .book-list {
-  margin-top: 20px;
+  width: 900px;
+  margin: 60px auto;
+  margin-bottom: 0;
 }
 .book-wrapper {
   min-height: 300px;

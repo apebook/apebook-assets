@@ -1,0 +1,1 @@
+KISSY.add("apebook/password",["kg/auth/2.0.9/","kg/auth/2.0.9/plugin/msgs/","kg/auth/2.0.9/plugin/msgs/style.css"],function(s,g,u,t){{var n,a=g("kg/auth/2.0.9/"),e=g("kg/auth/2.0.9/plugin/msgs/");g("kg/auth/2.0.9/plugin/msgs/style.css")}n=function(s){var g=a,u=e,t=new g("#J_Auth");return t.plug(new u),t.render(),s}(),t.exports=n});

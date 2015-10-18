@@ -1,0 +1,13 @@
+.uploader-button-wrapper {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.avatar-wrapper .singleImageUploader-queue {
+  width: 100px;
+  height: 100px;
+  background: url(http://a.apebook.org/avatar/default-avatar.png) 0 0 no-repeat;
+}
+.avatar-wrapper .singleImageUploader-queue img {
+  width: 100px;
+  height: 100px;
+}

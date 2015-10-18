@@ -1,0 +1,12 @@
+KISSY.add('apebook/bind-github',["io","node","./bind-github/go-github","./bind-github/select"],function(S ,require, exports, module) {
+ var io = require('io');
+var $ = require('node').all;
+
+var goGithub = require('./bind-github/go-github');
+
+goGithub();
+
+var select = require('./bind-github/select');
+select();
+
+});

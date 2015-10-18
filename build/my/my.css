@@ -28,6 +28,7 @@
   text-align: center;
   line-height: 160px;
   display: inline-block;
+  background: #fff;
 }
 .my-books .create-wrapper a {
   -webkit-transition: background 0.2s;

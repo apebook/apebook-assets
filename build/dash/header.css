@@ -1,0 +1,21 @@
+.dash-header {
+  border-bottom: 1px solid #ccc ;
+  margin-bottom: 20px;
+  position: relative;
+}
+.dash-header h3 {
+  margin-bottom: 20px;
+}
+.dash-header .button-wrapper {
+  width: 260px;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.dash-header .button-wrapper .btn {
+  width: auto;
+}
+.dash-header .status-wrapper {
+  margin-bottom: 10px;
+}
