@@ -1,0 +1,7 @@
+.link-inherit {
+  color: inherit;
+}
+.link-inherit:hover,
+.link-inherit:focus {
+  color: inherit;
+}

@@ -54,6 +54,20 @@ header {
 .left-nav {
   float: left;
   margin-left: 20px;
-  width: 200px;
+  width: 300px;
   margin-top: 20px;
+}
+blockquote {
+  margin: 0;
+  font-size: 12px;
+  padding: 10px 0;
+  border-left: none;
+}
+blockquote i {
+  color: #ccc;
+  margin-right: 10px;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
 }

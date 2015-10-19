@@ -100,7 +100,7 @@ gulp.task('mini-css', function(){
 });
 
 gulp.task('less', function(){
-    return gulp.src([src+'/**/*.less'])
+    return gulp.src([src+'/*.less'])
         .pipe(less())
         .on('error',function(e){
             console.log(e);
