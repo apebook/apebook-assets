@@ -5,5 +5,5 @@ module.exports = function() {
   if(!$tip.length){
     return false;
   }
-  location.href = $tip.attr('data-url');
+  //location.href = $tip.attr('data-url');
 };

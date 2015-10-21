@@ -1,1 +1,1 @@
-KISSY.add("apebook/bind-github/go-github",["node"],function(t,o,n,a){var i=o("node").all;a.exports=function(){var t=i(".J_GithubTip");return t.length?void(location.href=t.attr("data-url")):!1}});
+KISSY.add("apebook/bind-github/go-github",["node"],function(n,o,i,t){var d=o("node").all;t.exports=function(){var n=d(".J_GithubTip");return n.length?void 0:!1}});
