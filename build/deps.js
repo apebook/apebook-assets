@@ -6,6 +6,10 @@ KISSY.config('requires',{
         "./bind-github/go-github",
         "./bind-github/select"
     ],
+    "apebook/book-data": [
+        "io",
+        "node"
+    ],
     "apebook/book": [
         "./book/create-form"
     ],
