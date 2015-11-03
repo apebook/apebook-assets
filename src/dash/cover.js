@@ -1,7 +1,7 @@
 //封面上传与编辑
+var Node = require('node');
+var $ = Node.all;
 module.exports = function(){
-    var Node = require('node');
-    var $ = Node.all;
     var $btn = $('#J_UploaderBtn');
 
     if(!$btn.length) return false;

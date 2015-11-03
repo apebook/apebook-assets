@@ -11,7 +11,8 @@ KISSY.config('requires',{
         "node"
     ],
     "apebook/book": [
-        "./book/create-form"
+        "./book/create-form",
+        "../dash/cover"
     ],
     "apebook/dash": [
         "./dash/cover",
@@ -47,8 +48,7 @@ KISSY.config('requires',{
         "kg/auth/2.0.9/",
         "kg/auth/2.0.9/plugin/msgs/",
         "kg/auth/2.0.9/plugin/msgs/style.css",
-        "io",
-        "../dash/cover"
+        "io"
     ],
     "apebook/dash/cover": [
         "node"

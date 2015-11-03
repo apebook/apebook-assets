@@ -1,10 +1,9 @@
-KISSY.add('apebook/book/create-form',["kg/auth/2.0.9/","kg/auth/2.0.9/plugin/msgs/","kg/auth/2.0.9/plugin/msgs/style.css","io","../dash/cover"],function(S ,require, exports, module) {
+KISSY.add('apebook/book/create-form',["kg/auth/2.0.9/","kg/auth/2.0.9/plugin/msgs/","kg/auth/2.0.9/plugin/msgs/style.css","io"],function(S ,require, exports, module) {
  
 var Auth = require('kg/auth/2.0.9/');
 var Msg = require('kg/auth/2.0.9/plugin/msgs/');
 require('kg/auth/2.0.9/plugin/msgs/style.css');
 var io = require('io');
-var cover = require('../dash/cover');
 module.exports = function(){
     var auth = new Auth('#J_Auth');
     auth.plug(new Msg());
@@ -35,7 +34,5 @@ module.exports = function(){
         return defer.promise;
     });
     auth.render();
-
-    cover();
 };
 });
