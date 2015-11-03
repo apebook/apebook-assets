@@ -12,7 +12,7 @@ KISSY.config('requires',{
     ],
     "apebook/book": [
         "./book/create-form",
-        "../dash/cover"
+        "./dash/cover"
     ],
     "apebook/dash": [
         "./dash/cover",
@@ -67,10 +67,10 @@ KISSY.config('requires',{
         "kg/xtemplate/4.3.0/runtime",
         "node"
     ],
-    "apebook/register/form": [
+    "apebook/setting/avatar": [
         "node"
     ],
-    "apebook/setting/avatar": [
+    "apebook/register/form": [
         "node"
     ]
 });
