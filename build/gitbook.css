@@ -7411,6 +7411,7 @@ td.visible-print {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 100;
   transition: top 0.5s ease;
   -webkit-transition: top 0.5s ease;
   -moz-transition: top 0.5s ease;
@@ -7561,7 +7562,7 @@ td.visible-print {
 }
 .book .book-body .page-wrapper .page-inner section img {
   margin: 10px 0 !important;
-  border: 1px solid #F9F9F9;
+  border: 1px solid #eee;
 }
 .book .book-body .page-wrapper .page-inner section h1,
 .book .book-body .page-wrapper .page-inner section h2,
