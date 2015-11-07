@@ -8,11 +8,11 @@
 }
 .book .book-body .page-wrapper .page-inner section.glossary .glossary-index {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .book .book-body .page-wrapper .page-inner section.glossary .glossary-index li {
   display: inline;
-  margin: 0px 8px;
+  margin: 0 8px;
   white-space: nowrap;
 }

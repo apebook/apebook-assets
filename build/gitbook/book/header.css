@@ -2,9 +2,9 @@
   font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
   overflow: hidden;
-  top: 0px;
-  right: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 50px;
   z-index: 2;
   font-size: 0.85em;
@@ -15,7 +15,7 @@
 .book .book-header .btn {
   display: block;
   height: 50px;
-  padding: 0px 15px;
+  padding: 0 15px;
   border-bottom: none;
   color: #7e888b;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
   background: #f0f2f4;
 }
 .book .book-header h1 {
-  margin: 0px;
+  margin: 0;
   font-size: 20px;
   text-align: center;
   line-height: 50px;

@@ -5,10 +5,10 @@
 
     .book-body {
         position: absolute;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        bottom: 0px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
         overflow-y: auto;
 
         color: @page-color;
@@ -17,10 +17,10 @@
 
         .body-inner {
             position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
-            bottom: 0px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
             overflow-y: auto;
         }
 
@@ -30,11 +30,11 @@
 
             .page-inner {
                 max-width: 800px;
-                margin: 0px auto;
-                padding: 20px 0px 40px 0px;
+                margin: 0 auto;
+                padding: 20px 0 40px 0;
 
                 section {
-                    margin: 0px 0px;
+                    margin: 0 0;
                     padding: 5px 15px;
 
                     background: @page-background;
@@ -45,9 +45,9 @@
 
                 .btn-group {
                     .btn {
-                        border-radius: 0px;
+                        border-radius: 0;
                         background: #eee;
-                        border: 0px;
+                        border: 0;
                     }
                 }
             }
@@ -74,7 +74,7 @@
             overflow: hidden;
 
             .book-body {
-                .translate(~"calc(100% - 60px)", 0px);
+                .translate(~"calc(100% - 60px)", 0);
             }
         }
     }

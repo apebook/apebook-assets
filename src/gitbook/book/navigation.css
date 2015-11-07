@@ -1,7 +1,7 @@
 .book .book-body .navigation {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
   margin: 0;
   max-width: 150px;
   min-width: 90px;
@@ -22,10 +22,10 @@
   text-decoration: none;
 }
 .book .book-body .navigation.navigation-next {
-  right: 0px;
+  right: 0;
 }
 .book .book-body .navigation.navigation-prev {
-  left: 0px;
+  left: 0;
 }
 @media (max-width: 1240px) {
   .book .book-body .navigation {

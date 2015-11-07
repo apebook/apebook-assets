@@ -10,19 +10,19 @@
   .book-body {
     position: fixed;
     top: @header-height;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
 
     background: @body-background;
     .transition(left 0.5s ease);
 
     .body-inner {
       position: absolute;
-      top: 0px;
-      right: 0px;
-      left: 0px;
-      bottom: 0px;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
       overflow-y: auto;
     }
 
@@ -36,7 +36,7 @@
         margin: 20px auto;
 
         section {
-          margin: 0px 0px;
+          margin: 0 0;
           padding: 5px 15px;
 
           background: @page-background;
@@ -44,13 +44,18 @@
 
           font-size: 16px;
           line-height: 1.5em;
+
+          img{
+            margin: 10px 0 !important;
+            border: 1px solid #F9F9F9;
+          }
         }
 
         .btn-group {
           .btn {
-            border-radius: 0px;
+            border-radius: 0;
             background: #eee;
-            border: 0px;
+            border: 0;
           }
         }
       }

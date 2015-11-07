@@ -22,7 +22,7 @@
     position: fixed;
     top: @header-height;
     left: -@sidebar-width;
-    bottom: 0px;
+    bottom: 0;
     z-index: 1;
 
     width: @sidebar-width;
@@ -40,8 +40,8 @@
 
       position: absolute;
       top: -@header-height;
-      left: 0px;
-      right: 0px;
+      left: 0;
+      right: 0;
 
       .transition(top 0.5s ease);
 
@@ -54,16 +54,16 @@
 
     ul.summary {
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
 
       overflow-y: auto;
 
       list-style: none;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
 
       .transition(top 0.5s ease);
 
@@ -130,14 +130,14 @@
 
     @media (max-width: 600px) {
       width: 100%;
-      bottom: 0px;
+      bottom: 0;
       left: -100%;
     }
   }
 
   &.with-summary {
     .book-summary {
-      left: 0px;
+      left: 0;
     }
   }
 
@@ -150,7 +150,7 @@
   &.with-search {
     .book-summary {
       .book-search {
-        top: 0px;
+        top: 0;
       }
 
       ul.summary {

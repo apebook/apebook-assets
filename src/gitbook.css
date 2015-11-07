@@ -3424,7 +3424,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
 .navbar-header:before,
@@ -7299,26 +7299,26 @@ td.visible-print {
   width: 100%;
   height: 100%;
   background: #edece4;
-  padding: 40px 0px;
-  margin: 0px;
+  padding: 40px 0;
+  margin: 0;
   overflow: auto;
 }
 .book-langs-index .inner {
   max-width: 350px;
   width: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 15px;
   background: #fff;
   border-radius: 3px;
 }
 .book-langs-index .inner h1 {
-  margin: 0px;
+  margin: 0;
   text-align: center;
 }
 .book-langs-index .inner .languages {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-top: 20px;
   border-top: 1px solid #eee;
 }
@@ -7332,9 +7332,9 @@ td.visible-print {
   font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
   overflow: hidden;
-  top: 0px;
-  right: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 50px;
   z-index: 2;
   font-size: 0.85em;
@@ -7345,7 +7345,7 @@ td.visible-print {
 .book .book-header .btn {
   display: block;
   height: 50px;
-  padding: 0px 15px;
+  padding: 0 15px;
   border-bottom: none;
   color: #7e888b;
   text-transform: uppercase;
@@ -7396,7 +7396,7 @@ td.visible-print {
   position: fixed;
   top: 50px;
   left: -250px;
-  bottom: 0px;
+  bottom: 0;
   z-index: 1;
   width: 250px;
   color: #c4cdd4;
@@ -7414,8 +7414,8 @@ td.visible-print {
   border-bottom: 1px solid #c4cdd4;
   position: absolute;
   top: -50px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   transition: top 0.5s ease;
   -webkit-transition: top 0.5s ease;
   -moz-transition: top 0.5s ease;
@@ -7432,14 +7432,14 @@ td.visible-print {
 }
 .book .book-summary ul.summary {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow-y: auto;
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   transition: top 0.5s ease;
   -webkit-transition: top 0.5s ease;
   -moz-transition: top 0.5s ease;
@@ -7503,12 +7503,12 @@ td.visible-print {
 @media (max-width: 600px) {
   .book .book-summary {
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     left: -100%;
   }
 }
 .book.with-summary .book-summary {
-  left: 0px;
+  left: 0;
 }
 .book.without-animation .book-summary {
   transition: none !important;
@@ -7518,7 +7518,7 @@ td.visible-print {
   -o-transition: none !important;
 }
 .book.with-search .book-summary .book-search {
-  top: 0px;
+  top: 0;
 }
 .book.with-search .book-summary ul.summary {
   top: 50px;
@@ -7526,9 +7526,9 @@ td.visible-print {
 .book .book-body {
   position: fixed;
   top: 50px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background: #ffffff;
   transition: left 0.5s ease;
   -webkit-transition: left 0.5s ease;
@@ -7538,10 +7538,10 @@ td.visible-print {
 }
 .book .book-body .body-inner {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   overflow-y: auto;
 }
 .book .book-body .page-wrapper {
@@ -7554,17 +7554,21 @@ td.visible-print {
   margin: 20px auto;
 }
 .book .book-body .page-wrapper .page-inner section {
-  margin: 0px 0px;
+  margin: 0 0;
   padding: 5px 15px;
   background: #ffffff;
   border-radius: 2px;
   font-size: 16px;
   line-height: 1.5em;
 }
+.book .book-body .page-wrapper .page-inner section img {
+  margin: 10px 0 !important;
+  border: 1px solid #F9F9F9;
+}
 .book .book-body .page-wrapper .page-inner .btn-group .btn {
-  border-radius: 0px;
+  border-radius: 0;
   background: #eee;
-  border: 0px;
+  border: 0;
 }
 @media (max-width: 1240px) {
   .book .book-body {
@@ -7600,8 +7604,8 @@ td.visible-print {
   margin-right: -136px;
 }
 .book .book-body .page-wrapper .page-inner section.exercise {
-  padding: 0px;
-  margin: 20px 0px;
+  padding: 0;
+  margin: 20px 0;
   border: 3px solid #2f8cde;
 }
 .book .book-body .page-wrapper .page-inner section.exercise .header {
@@ -7610,7 +7614,7 @@ td.visible-print {
   background: #2f8cde;
 }
 .book .book-body .page-wrapper .page-inner section.exercise .header h2 {
-  margin: 0px;
+  margin: 0;
   font-size: 20px;
 }
 .book .book-body .page-wrapper .page-inner section.exercise .message {
@@ -7624,7 +7628,7 @@ td.visible-print {
 }
 .book .book-body .page-wrapper .page-inner section.exercise .alert {
   display: none;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
   padding: 8px 15px;
 }
@@ -7787,10 +7791,10 @@ td.visible-print {
   margin-bottom: 0;
 }
 .book .book-body .page-wrapper .page-inner section.normal ul p {
-  margin: 0px;
+  margin: 0;
 }
 .book .book-body .page-wrapper .page-inner section.normal ul ul {
-  margin: 0px;
+  margin: 0;
 }
 .book .book-body .page-wrapper .page-inner section.normal dl {
   padding: 0;
@@ -7872,7 +7876,7 @@ td.visible-print {
 .book .book-body .page-wrapper .page-inner section.normal img {
   max-width: 100%;
   display: block;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .book .book-body .page-wrapper .page-inner section.normal span.frame {
   display: block;
@@ -8004,7 +8008,7 @@ td.visible-print {
   }
 }
 .book .book-body .book-progress {
-  height: 0px;
+  height: 0;
   width: 100%;
   position: relative;
   background: #fff;
@@ -8046,7 +8050,7 @@ td.visible-print {
   height: 16px;
   border-radius: 16px;
   background: #ffffff;
-  box-shadow: 0px 0px 1px #bbb;
+  box-shadow: 0 0 1px #bbb;
 }
 .book .book-body .book-progress .chapters .chapter.done {
   background: #33cc33;
@@ -8062,8 +8066,8 @@ td.visible-print {
 }
 .book .book-body .navigation {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
   margin: 0;
   max-width: 150px;
   min-width: 90px;
@@ -8085,10 +8089,10 @@ td.visible-print {
   text-decoration: none;
 }
 .book .book-body .navigation.navigation-next {
-  right: 0px;
+  right: 0;
 }
 .book .book-body .navigation.navigation-prev {
-  left: 0px;
+  left: 0;
 }
 @media (max-width: 1240px) {
   .book .book-body .navigation {

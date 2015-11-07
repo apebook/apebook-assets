@@ -151,10 +151,10 @@
   margin-bottom: 0;
 }
 .book .book-body .page-wrapper .page-inner section.normal ul p {
-  margin: 0px;
+  margin: 0;
 }
 .book .book-body .page-wrapper .page-inner section.normal ul ul {
-  margin: 0px;
+  margin: 0;
 }
 .book .book-body .page-wrapper .page-inner section.normal dl {
   padding: 0;
@@ -236,7 +236,7 @@
 .book .book-body .page-wrapper .page-inner section.normal img {
   max-width: 100%;
   display: block;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .book .book-body .page-wrapper .page-inner section.normal span.frame {
   display: block;
