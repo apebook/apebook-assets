@@ -7392,7 +7392,6 @@ td.visible-print {
   -o-transition: none !important;
 }
 .book .book-summary {
-  font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
   top: 50px;
   left: -250px;
@@ -7400,8 +7399,7 @@ td.visible-print {
   z-index: 1;
   width: 250px;
   color: #c4cdd4;
-  background: #f0f2f4;
-  box-shadow: inset -1px 0 5px rgba(0, 0, 0, 0.1);
+  background: #F9F9F9;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -7409,11 +7407,9 @@ td.visible-print {
   -o-transition: all 0.5s ease;
 }
 .book .book-summary .book-search {
-  padding: 6px;
-  background: #c4cdd4;
-  border-bottom: 1px solid #c4cdd4;
+  padding: 1px;
+  background: #F9F9F9;
   position: absolute;
-  top: -50px;
   left: 0;
   right: 0;
   transition: top 0.5s ease;
@@ -7490,6 +7486,9 @@ td.visible-print {
   -webkit-opacity: 0.3;
   -moz-opacity: 0.3;
   opacity: 0.3;
+}
+.book .book-summary ul.summary li.active {
+  background-color: #fff;
 }
 .book .book-summary ul.summary li.active > a,
 .book .book-summary ul.summary li a:hover {

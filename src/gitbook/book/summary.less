@@ -17,8 +17,6 @@
 }
 .book {
   .book-summary {
-    font-family: @font-family-sans;
-
     position: fixed;
     top: @header-height;
     left: -@sidebar-width;
@@ -27,19 +25,14 @@
 
     width: @sidebar-width;
     color: @sidebar-color;
-    background: @sidebar-background;
-    box-shadow: inset -1px 0 5px hsla(0, 0%, 0%, 0.1);
+    background: #F9F9F9;
 
     .transition(all 0.5s ease);
 
     .book-search {
-      padding: @sidebar-search-padding;
-
-      background: @sidebar-search-background;
-      border-bottom: 1px solid @sidebar-search-border-color;
-
+      padding: 1px;
+      background: #F9F9F9;
       position: absolute;
-      top: -@header-height;
       left: 0;
       right: 0;
 
@@ -115,7 +108,9 @@
           cursor: not-allowed;
           .opacity(0.3);
         }
-
+        &.active{
+          background-color: #fff;
+        }
         &.active > a, a:hover {
           color: @sidebar-link-hover-color;
           background: @sidebar-link-hover-background;
