@@ -7412,6 +7412,7 @@ td.visible-print {
   left: 0;
   right: 0;
   z-index: 100;
+  top: -100px;
   transition: top 0.5s ease;
   -webkit-transition: top 0.5s ease;
   -moz-transition: top 0.5s ease;
