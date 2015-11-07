@@ -144,7 +144,7 @@
 }
 .lib-header {
   min-height: 260px;
-  background: url(//a.apebook.org/cover/4.jpg) 0 -280px no-repeat;
+  background: url(//a.apebook.org/cover/my.jpg) 0 0 no-repeat;
   background-size: cover;
   position: relative;
 }
