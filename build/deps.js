@@ -10,7 +10,7 @@ KISSY.config('requires',{
         "io",
         "node"
     ],
-    "apebook/book": [
+    "apebook/book-setting": [
         "./book/create-form",
         "./dash/cover"
     ],
