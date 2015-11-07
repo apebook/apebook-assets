@@ -7563,6 +7563,14 @@ td.visible-print {
   margin: 10px 0 !important;
   border: 1px solid #F9F9F9;
 }
+.book .book-body .page-wrapper .page-inner section h1,
+.book .book-body .page-wrapper .page-inner section h2,
+.book .book-body .page-wrapper .page-inner section h3,
+.book .book-body .page-wrapper .page-inner section h4,
+.book .book-body .page-wrapper .page-inner section h5,
+.book .book-body .page-wrapper .page-inner section h6 {
+  color: #5C6B77 !important;
+}
 .book .book-body .page-wrapper .page-inner .btn-group .btn {
   border-radius: 0;
   background: #eee;
