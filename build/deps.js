@@ -50,9 +50,6 @@ KISSY.config('requires',{
         "kg/auth/2.0.9/plugin/msgs/style.css",
         "io"
     ],
-    "apebook/detail/summary": [
-        "node"
-    ],
     "apebook/dash/cover": [
         "node"
     ],
@@ -61,16 +58,19 @@ KISSY.config('requires',{
         "io",
         "kg/notification/1.0.0/"
     ],
+    "apebook/detail/summary": [
+        "node"
+    ],
     "apebook/history/history": [
         "io",
         "./view",
         "kg/xtemplate/4.3.0/runtime",
         "node"
     ],
-    "apebook/register/form": [
+    "apebook/setting/avatar": [
         "node"
     ],
-    "apebook/setting/avatar": [
+    "apebook/register/form": [
         "node"
     ]
 });
