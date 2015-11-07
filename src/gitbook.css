@@ -7329,7 +7329,6 @@ td.visible-print {
   border-bottom: 1px solid #eee;
 }
 .book .book-header {
-  font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -7340,7 +7339,7 @@ td.visible-print {
   font-size: 0.85em;
   color: #7e888b;
   background: #ffffff;
-  box-shadow: 0 1px 2px rgba(199, 206, 209, 0.6);
+  border-bottom: 1px solid #eee;
 }
 .book .book-header .btn {
   display: block;
