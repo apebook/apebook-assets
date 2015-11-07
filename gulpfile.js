@@ -23,14 +23,6 @@ kmc.config({
     }]
 });
 
-kmc.server({
-    port:5555,
-    fixModule:true,
-    path: dest,
-    kissy:true
-});
-
-
 var dirs = fs.readdirSync(src);
 
 var kissyFiles = [];
@@ -124,9 +116,4 @@ gulp.task('xtpl',function(){
 });
 
 
-gulp.task('watch', function() {
-    gulp.watch(src+'/**/*.xtpl', ['xtpl']);
-    gulp.watch(src+'/**/*.less', ['css']);
-});
-
-gulp.task('default', ['kmc','css','watch']);
+gulp.task('default', ['kmc','css']);
