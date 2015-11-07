@@ -7573,6 +7573,9 @@ td.visible-print {
 .book .book-body .page-wrapper .page-inner section h6 {
   color: #5C6B77 !important;
 }
+.book .book-body .page-wrapper .page-inner section pre {
+  margin: 0 !important;
+}
 .book .book-body .page-wrapper .page-inner .btn-group .btn {
   border-radius: 0;
   background: #eee;
