@@ -69,27 +69,14 @@ header {
 }
 .logo {
   margin: 0;
-  padding: 0 20px;
-  line-height: 60px;
+  line-height: 0;
   color: #fff;
-  background: url(//a.apebook.org/logo/logo.jpg) 0 0 no-repeat #5bb793;
-  box-shadow: inset 0 0 10px #489174;
   display: inline-block;
-  text-indent: -200px;
   width: 220px;
   float: left;
 }
-.logo a {
-  color: #fff;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.logo:hover {
-  box-shadow: inset 0 0 10px #333;
-}
-.logo a:hover {
-  text-decoration: none;
+.logo img {
+  width: 250px;
 }
 .logo span {
   font-size: 36px;
@@ -117,9 +104,9 @@ header {
 }
 .left-nav {
   float: left;
-  margin-left: 20px;
+  margin-left: 50px;
   width: 300px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 blockquote {
   margin: 0;
