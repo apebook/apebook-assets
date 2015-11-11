@@ -259,7 +259,7 @@ blockquote cite {
   color: #fff;
 }
 .sidebar-wrapper {
-  width: 220px;
+  width: 250px;
   position: fixed;
   top: 0;
   left: 0;
@@ -267,6 +267,9 @@ blockquote cite {
   z-index: 99;
   overflow-y: auto;
   background: #F5F5F5;
+}
+.sidebar-wrapper .logo {
+  float: none;
 }
 .sidebar-wrapper ul li {
   margin-top: 10px;
@@ -284,7 +287,7 @@ blockquote cite {
   margin-right: 10px;
 }
 .dash-main {
-  margin-left: 240px;
+  margin-left: 280px;
 }
 .dash-main .dash-wrapper {
   margin-top: 10px;
