@@ -51,6 +51,12 @@
   padding: 8px 20px;
   margin-left: 140px;
   text-overflow: ellipsis;
+  position: relative;
+}
+.book-infos .edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .book-infos h4 {
   margin-left: -12px;
