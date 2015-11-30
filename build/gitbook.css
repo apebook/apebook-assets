@@ -7215,76 +7215,102 @@ td.visible-print {
 .link-inherit:focus {
   color: inherit;
 }
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Tomorrow Comment */
-.hljs-comment {
-  color: #3a5c78;
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+  -webkit-text-size-adjust: none;
 }
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-attribute,
+.hljs-keyword,
 .hljs-tag,
-.hljs-regexp,
-.ruby .hljs-constant,
-.xml .hljs-tag .hljs-title,
-.xml .hljs-pi,
-.xml .hljs-doctype,
-.html .hljs-doctype,
-.css .hljs-id,
 .css .hljs-class,
-.css .hljs-pseudo {
-  color: #c82829;
+.css .hljs-id,
+.lisp .hljs-title,
+.nginx .hljs-title,
+.hljs-request,
+.hljs-status,
+.clojure .hljs-attribute {
+  color: #e3ceab;
 }
-/* Tomorrow Orange */
+.django .hljs-template_tag,
+.django .hljs-variable,
+.django .hljs-filter .hljs-argument {
+  color: #dcdcdc;
+}
 .hljs-number,
+.hljs-date {
+  color: #8cd0d3;
+}
+.dos .hljs-envvar,
+.dos .hljs-stream,
+.hljs-variable,
+.apache .hljs-sqbracket {
+  color: #efdcbc;
+}
+.dos .hljs-flow,
+.diff .hljs-change,
+.python .exception,
+.python .hljs-built_in,
+.hljs-literal,
+.tex .hljs-special {
+  color: #efefaf;
+}
+.diff .hljs-chunk,
+.hljs-subst {
+  color: #8f8f8f;
+}
+.dos .hljs-keyword,
+.hljs-decorator,
+.hljs-title,
+.hljs-type,
+.diff .hljs-header,
+.ruby .hljs-class .hljs-parent,
+.apache .hljs-tag,
+.nginx .hljs-built_in,
+.tex .hljs-command,
+.hljs-prompt {
+  color: #efef8f;
+}
+.dos .hljs-winutils,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.ruby .hljs-string {
+  color: #dca3a3;
+}
+.diff .hljs-deletion,
+.hljs-string,
+.hljs-tag .hljs-value,
 .hljs-preprocessor,
 .hljs-pragma,
 .hljs-built_in,
-.hljs-literal,
-.hljs-constant,
-.hljs-function .hljs-title {
-  color: #ffdd33;
+.hljs-javadoc,
+.smalltalk .hljs-class,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.css .hljs-rules .hljs-value,
+.hljs-attr_selector,
+.hljs-pseudo,
+.apache .hljs-cbracket,
+.tex .hljs-formula,
+.coffeescript .hljs-attribute {
+  color: #cc9393;
 }
-/* Tomorrow Yellow */
-.ruby .hljs-class .hljs-title,
-.css .hljs-rules .hljs-attribute {
-  color: #eab700;
-}
-/* Tomorrow Green */
-.hljs-string,
-.hljs-value,
-.hljs-inheritance,
-.hljs-header,
-.ruby .hljs-symbol,
-.xml .hljs-cdata {
-  color: #ff6666;
-}
-/* Tomorrow Aqua */
-.css .hljs-hexcolor {
-  color: #3e999f;
-}
-/* Tomorrow Blue */
-.hljs-function .keyword,
-.python .hljs-decorator,
-.python .hljs-title,
-.ruby .hljs-function .hljs-title,
-.ruby .hljs-title .hljs-keyword,
-.perl .hljs-sub,
-.javascript .hljs-title,
-.coffeescript .hljs-title {
-  color: #52a0e0;
-}
-/* Tomorrow Purple */
-.hljs-keyword,
-.javascript .hljs-function {
-  color: #6abafb;
-}
-.hljs {
-  display: block;
-  background: white;
-  color: #4d4d4c;
-  padding: 0.5em;
-  font-family: "Anonymous Pro", "Inconsolata", "Monaco", monospace;
+.hljs-shebang,
+.diff .hljs-addition,
+.hljs-comment,
+.hljs-annotation,
+.hljs-template_comment,
+.hljs-pi,
+.hljs-doctype {
+  color: #7f9f7f;
 }
 .coffeescript .javascript,
 .javascript .xml,
@@ -7963,48 +7989,13 @@ td.visible-print {
   margin: 13px auto 0;
   text-align: right;
 }
-.book .book-body .page-wrapper .page-inner section.normal code,
-.book .book-body .page-wrapper .page-inner section.normal tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-}
-.book .book-body .page-wrapper .page-inner section.normal pre code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent;
-}
-.book .book-body .page-wrapper .page-inner section.normal .highlight pre {
-  color: #b8d0e0;
-  background-color: #121b21;
-  border: 1px solid #121b21;
-  font-size: 16px;
-  line-height: 1.5em;
-  overflow: auto;
-  padding: 20px;
-  margin: 0 -20px;
-  border-radius: 3px;
-}
 .book .book-body .page-wrapper .page-inner section.normal pre {
-  color: #b8d0e0;
-  background-color: #121b21;
-  border: 1px solid #121b21;
   font-size: 16px;
   line-height: 1.5em;
   overflow: auto;
   padding: 20px;
   margin: 0 -20px;
   border-radius: 3px;
-}
-.book .book-body .page-wrapper .page-inner section.normal pre code,
-.book .book-body .page-wrapper .page-inner section.normal pre tt {
-  background-color: transparent;
-  border: none;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animate-loading {
