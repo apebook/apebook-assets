@@ -126,6 +126,9 @@ blockquote cite {
 .right-nav .login-btn span {
   margin-right: 3px;
 }
+.right-nav .avatar {
+  border-radius: 30px;
+}
 .form-vertical {
   margin-top: 20px;
 }
