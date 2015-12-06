@@ -6,7 +6,10 @@ body {
   padding-top: 100px;
 }
 .join-wrapper h3 {
+  margin-top: 0;
   color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 .join-wrapper form {
   display: block;
@@ -25,4 +28,17 @@ body {
 .activate-wrapper .btn-success {
   margin-top: 20px;
   width: 120px;
+}
+.login-btn {
+  width: 120px;
+}
+.github-login-btn {
+  width: 220px;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-top: 70px;
+  border: none;
+}
+.github-login-btn span {
+  margin-right: 10px;
 }

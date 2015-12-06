@@ -50,6 +50,10 @@ KISSY.config('requires',{
         "kg/auth/2.0.9/plugin/msgs/style.css",
         "io"
     ],
+    "apebook/common/login": [
+        "node",
+        "kg/modal/1.5.2/index"
+    ],
     "apebook/dash/cover": [
         "node"
     ],
