@@ -235,3 +235,6 @@ button::-moz-focus-inner {
   background-color: #ccc;
   text-decoration: none;
 }
+.error-msg {
+  color: red;
+}
