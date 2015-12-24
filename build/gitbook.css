@@ -7993,7 +7993,7 @@ based on dark.css by Ivan Sagalaev
   font-size: 16px;
   line-height: 1.5em;
   overflow: auto;
-  padding: 0;
+  padding: 10px;
   margin: 0 -20px;
   border: none !important;
 }

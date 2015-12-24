@@ -54,6 +54,61 @@ KISSY.config('requires',{
         "node",
         "kg/modal/1.5.2/index"
     ],
+    "apebook/bundle/dropdown": [
+        "jquery"
+    ],
+    "apebook/bundle/events": [
+        "jquery"
+    ],
+    "apebook/bundle/index": [
+        "jquery",
+        "lodash",
+        "./storage",
+        "./dropdown",
+        "./events",
+        "./state",
+        "./keyboard",
+        "./navigation",
+        "./sidebar",
+        "./toolbar",
+        "./search"
+    ],
+    "apebook/bundle/keyboard": [
+        "mousetrap",
+        "./navigation",
+        "./sidebar"
+    ],
+    "apebook/bundle/loading": [
+        "./state"
+    ],
+    "apebook/bundle/navigation": [
+        "jquery",
+        "url",
+        "./events",
+        "./state",
+        "./loading"
+    ],
+    "apebook/bundle/search": [
+        "lodash",
+        "lunr"
+    ],
+    "apebook/bundle/sidebar": [
+        "jquery",
+        "lodash",
+        "./storage",
+        "./platform",
+        "./state"
+    ],
+    "apebook/bundle/state": [
+        "jquery",
+        "url",
+        "path"
+    ],
+    "apebook/bundle/toolbar": [
+        "jquery",
+        "lodash",
+        "./events"
+    ],
     "apebook/dash/cover": [
         "node"
     ],
@@ -71,10 +126,10 @@ KISSY.config('requires',{
         "kg/xtemplate/4.3.0/runtime",
         "node"
     ],
-    "apebook/register/form": [
+    "apebook/setting/avatar": [
         "node"
     ],
-    "apebook/setting/avatar": [
+    "apebook/register/form": [
         "node"
     ]
 });
