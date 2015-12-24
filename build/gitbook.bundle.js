@@ -26937,6 +26937,8 @@ state.update = function(dom) {
     state.bookRoot = state.innerLanguage? url.resolve(state.root, '..') : state.root;
 
     count();
+
+    hljs && hljs.initHighlightingOnLoad();
 };
 
 state.update($);
