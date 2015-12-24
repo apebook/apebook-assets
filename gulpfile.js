@@ -8,6 +8,9 @@ var filter = require('gulp-filter');
 var minify = require('gulp-minify');
 var XTemplate = require('xtemplate');
 var gulpXTemplate = require('gulp-xtemplate');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+
 var path = require('path');
 var fs = require('fs');
 var src = "./src",
@@ -115,5 +118,11 @@ gulp.task('xtpl',function(){
         .pipe(gulp.dest(src));
 });
 
+gulp.task('bundle', function() {
+    return browserify(src+'/bundle/index.js')
+        .bundle()
+        .pipe(source('gitbook.bundle.js'))
+        .pipe(gulp.dest(dest));
+});
 
-gulp.task('default', ['kmc','css']);
+gulp.task('default', ['kmc','css','bundle']);
