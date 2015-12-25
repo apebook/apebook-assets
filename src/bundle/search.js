@@ -11,7 +11,7 @@ function init(){
 
 // Fetch the search index
     function fetchIndex() {
-        $.getJSON(gitbook.state.basePath+"/search_index.json")
+        $.get(gitbook.state.basePath+"/search_index.json")
             .then(loadIndex);
     }
 

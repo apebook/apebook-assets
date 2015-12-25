@@ -17,14 +17,18 @@ function count(){
             }
         }
         if(!$star.data('count')){
-            $.jsonp('https://api.github.com/repos/'+user+'/'+repo).then(function(result){
-                var data = result[0].data;
-                var stargazers_count = data.stargazers_count;
-                $star.find('span').html(stargazers_count);
-                if(sessionStorage){
-                    sessionStorage.setItem(key,stargazers_count);
+            $.ajax({
+                url:'https://api.github.com/repos/'+user+'/'+repo,
+                dataType:"jsonp",
+                jsonp:"callback",
+                success:function(data){
+                    var stargazers_count = data.stargazers_count;
+                    $star.find('span').html(stargazers_count);
+                    if(sessionStorage){
+                        sessionStorage.setItem(key,stargazers_count);
+                    }
                 }
-            })
+            });
         }
     }
 
@@ -40,16 +44,20 @@ function count(){
             }
         }
         if(!$view.data('count')){
-            $.jsonp(api).then(function(result){
-                var data = result[0];
-                if(data.success){
-                    data = data.result;
-                    $view.find('span').html(data.view);
-                    if(sessionStorage){
-                        sessionStorage.setItem(api,data.view);
+            $.ajax({
+                url:api,
+                dataType:"jsonp",
+                jsonp:"callback",
+                success:function(data){
+                    if(data.success){
+                        data = data.result;
+                        $view.find('span').html(data.view);
+                        if(sessionStorage){
+                            sessionStorage.setItem(api,data.view);
+                        }
                     }
                 }
-            })
+            });
         }
     }
 }
@@ -86,7 +94,9 @@ state.update = function(dom) {
 
     count();
 
-    hljs && hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+        hljs && hljs.highlightBlock(block);
+    });
 };
 
 state.update($);

@@ -126,10 +126,10 @@ KISSY.config('requires',{
         "kg/xtemplate/4.3.0/runtime",
         "node"
     ],
-    "apebook/setting/avatar": [
+    "apebook/register/form": [
         "node"
     ],
-    "apebook/register/form": [
+    "apebook/setting/avatar": [
         "node"
     ]
 });
