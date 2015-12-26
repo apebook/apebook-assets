@@ -26873,8 +26873,9 @@ function count(){
                 url:'https://api.github.com/repos/'+user+'/'+repo,
                 dataType:"jsonp",
                 jsonp:"callback",
-                success:function(data){
-                    var stargazers_count = data.stargazers_count;
+                success:function(result){
+                    var data = result.data;
+                    var stargazers_count = data.stargazers_count || 0;
                     $star.find('span').html(stargazers_count);
                     if(sessionStorage){
                         sessionStorage.setItem(key,stargazers_count);
