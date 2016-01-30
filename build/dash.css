@@ -139,12 +139,14 @@ button::-moz-focus-inner {
   padding-left: 10px;
 }
 .cover-code {
-  margin: 12px 0;
-  margin-left: 30px;
-  color: #888;
+  margin: 15px;
+  padding: 10px;
+  background: #3f3f3f;
+  color: #fff;
 }
 .cover-add-tip {
   margin-left: 15px;
+  margin-top: 10px;
 }
 .dash-header {
   background: #fff;
