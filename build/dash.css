@@ -138,6 +138,14 @@ button::-moz-focus-inner {
   margin: 0;
   padding-left: 10px;
 }
+.cover-code {
+  margin: 12px 0;
+  margin-left: 30px;
+  color: #888;
+}
+.cover-add-tip {
+  margin-left: 15px;
+}
 .dash-header {
   background: #fff;
   padding: 10px;

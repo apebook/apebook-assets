@@ -1,0 +1,1 @@
+KISSY.add("apebook/bundle/keyboard",["mousetrap","./navigation","./sidebar"],function(n,i,o,t){function e(n,i){r.bind(n,function(){return i(),!1})}function a(){e(["right"],function(){u.goNext()}),e(["left"],function(){u.goPrev()}),e(["s"],function(){d.toggle()})}var r=i("mousetrap"),u=i("./navigation"),d=i("./sidebar");t.exports={init:a,bind:e}});

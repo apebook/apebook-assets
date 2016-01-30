@@ -1,0 +1,1 @@
+KISSY.add("apebook/bundle/platform",[],function(o,n,t,e){e.exports={isMobile:function(){return document.width<=600}}});

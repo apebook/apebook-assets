@@ -1,0 +1,1 @@
+KISSY.add("apebook/bundle/loading",["./state"],function(o,a,n,s){function t(o){return d.$book.addClass("is-loading"),o.always(function(){d.$book.removeClass("is-loading")}),o}var d=a("./state");s.exports={show:t}});
