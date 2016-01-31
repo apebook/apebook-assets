@@ -109,6 +109,9 @@ KISSY.config('requires',{
         "node",
         "kg/modal/1.5.2/index"
     ],
+    "apebook/detail/summary": [
+        "node"
+    ],
     "apebook/dash/cover": [
         "node"
     ],
@@ -116,9 +119,6 @@ KISSY.config('requires',{
         "node",
         "io",
         "kg/notification/1.0.0/"
-    ],
-    "apebook/detail/summary": [
-        "node"
     ],
     "apebook/history/history": [
         "io",
