@@ -20,7 +20,9 @@ module.exports = function(){
                 notify.notify({boxCls:'success',mPartMsg: data.msg||'更新成功'});
             }
             update = false;
-            $btn.text('更新图书');
+            setTimeout(function(){
+              location.reload();
+            },1000);
         })
     });
 
