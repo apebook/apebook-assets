@@ -10,7 +10,7 @@ module.exports = function(){
     $btn.on('click',function(){
         if(update) return false;
         notify.notify({boxCls:'warning',mPartMsg: "更新中请稍等五分钟"});
-        $btn.text('更新书籍中...');
+        $btn.text('更新图书中...');
         update = true;
         io.post('/api/book/sync',{id:$('.J_BookId').val()}).then(function(result){
             var data = result[0];
@@ -20,7 +20,7 @@ module.exports = function(){
                 notify.notify({boxCls:'success',mPartMsg: data.msg||'更新成功'});
             }
             update = false;
-            $btn.text('更新书籍');
+            $btn.text('更新图书');
         })
     });
 
@@ -36,8 +36,8 @@ module.exports = function(){
             }else{
                 notify.notify({boxCls:'success',mPartMsg: '状态设置成功'});
             }
-            $publishBtn.text(status === 'open' && '隐藏书籍' || '公开书籍');
-            $('.J_OpenStatus').text(status === 'open' && '隐藏书籍' || '公开书籍');
+            $publishBtn.text(status === 'open' && '隐藏图书' || '公开图书');
+            $('.J_OpenStatus').text(status === 'open' && '隐藏图书' || '公开图书');
             $publishBtn.attr(status === 'open' && 'hide' || 'open');
         })
     })
