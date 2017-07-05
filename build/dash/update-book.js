@@ -10,7 +10,7 @@ module.exports = function() {
   //点击更新书籍按钮
   $btn.on('click', function() {
     if (update) return false;
-    notify.notify({boxCls: 'warning', mPartMsg: "更新中请稍等五分钟"});
+    notify.notify({boxCls: 'warning', mPartMsg: "更新图书中请稍等五分钟"});
     $btn.text('更新图书中...');
     update = true;
     new IO({
@@ -18,8 +18,7 @@ module.exports = function() {
       url: '/api/book/sync',
       timeout: 6000,
       data: {id: $('.J_BookId').val()},
-      success: function(result) {
-        var data = result[0];
+      success: function(data) {
         if (!data.success) {
           notify.notify({boxCls: 'warn', mPartMsg: data.msg});
         } else {
@@ -38,7 +37,7 @@ module.exports = function() {
   var $publishBtn = $('.J_OpenBook');
   $publishBtn.on('click', function() {
     var status = $publishBtn.attr('data-status');
-    io.post('/api/book/post', {id: $('.J_BookId').val(), openStatus: status}).then(function(result) {
+    IO.post('/api/book/post', {id: $('.J_BookId').val(), openStatus: status}).then(function(result) {
       var data = result[0];
       if (!data.success) {
         notify.notify({boxCls: 'warn', mPartMsg: data.msg});
@@ -46,8 +45,8 @@ module.exports = function() {
       } else {
         notify.notify({boxCls: 'success', mPartMsg: '状态设置成功'});
       }
-      $publishBtn.text(status === 'open' && '隐藏图书' || '公开图书');
-      $('.J_OpenStatus').text(status === 'open' && '隐藏图书' || '公开图书');
+      $publishBtn.text(status === 'open' && '下架图书' || '公开图书');
+      $('.J_OpenStatus').text(status === 'open' && '下架图书' || '公开图书');
       $publishBtn.attr(status === 'open' && 'hide' || 'open');
     })
   })
