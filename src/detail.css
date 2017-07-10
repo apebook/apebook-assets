@@ -3,7 +3,7 @@ section.detail-wrapper {
 }
 section.detail-wrapper .detail-main {
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: -10px;
   position: relative;
 }
 section.detail-wrapper h2 {
@@ -49,6 +49,15 @@ section.detail-wrapper .btn-wrapper .set-btn {
   top: 0;
   right: 0;
 }
+.avatar-wrapper {
+  width: 6%;
+}
+.lang-wrapper {
+  width: 11%;
+}
+.updateTime-wrapper {
+  width: 13%;
+}
 .summary-wrapper {
   background: #f1f4f9;
   padding: 40px 0;
@@ -78,25 +87,4 @@ section.detail-wrapper .btn-wrapper .set-btn {
 .reademe-wrapper .reademe-main {
   width: 1120px;
   margin: 0 auto;
-}
-.author-wrapper {
-  height: 94px;
-  width: 300px;
-}
-.author-wrapper:hover {
-  background: #edeff0;
-}
-.author-wrapper a {
-  color: #777;
-}
-.author-wrapper img {
-  margin-top: -20px;
-  margin-right: 20px;
-}
-.author-wrapper .email {
-  color: #999;
-}
-.author-wrapper p {
-  margin-top: 5px;
-  margin-bottom: 0;
 }

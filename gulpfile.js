@@ -88,8 +88,7 @@ gulp.task('kmc', function() {
 });
 
 gulp.task('mini-css', function(){
-    return gulp.src([src+'/**/*.css'])
-        .pipe(gulp.dest(dest))
+    return gulp.src([dest+'/**/*.css','!'+dest+'/**/*-min.css'])
         .pipe(css({ext:'-min.css'}))
         .pipe(gulp.dest(dest));
 });
@@ -100,7 +99,7 @@ gulp.task('less', function(){
         .on('error',function(e){
             console.log(e);
         })
-        .pipe(gulp.dest(src));
+        .pipe(gulp.dest(dest));
 });
 
 gulp.task('css',['less','mini-css']);
