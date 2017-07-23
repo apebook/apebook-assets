@@ -22,9 +22,6 @@
   overflow: hidden;
   background: #fff;
 }
-.books-item .description {
-  min-height: 80px;
-}
 .book-cover {
   position: relative;
   width: 130px;
@@ -52,6 +49,7 @@
   margin-left: 140px;
   text-overflow: ellipsis;
   position: relative;
+  height: 100%;
 }
 .book-infos .edit-btn {
   position: absolute;
@@ -66,8 +64,12 @@
 }
 .book-infos .info-meta {
   color: #999;
-  border-top: 1px dashed #f1f4f9;
+  border-top: 1px solid #f1f4f9;
   padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 100%;
 }
 .book-infos .info-meta i {
   margin-right: 5px;
