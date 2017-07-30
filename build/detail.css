@@ -75,6 +75,9 @@ section.detail-wrapper .btn-wrapper .set-btn {
   width: 860px;
   padding-left: 40px;
 }
+.reademe-wrapper .col-md-10 img {
+  max-width: 800px;
+}
 .author-wrapper {
   background: #f7f6f2;
   padding: 10px;
