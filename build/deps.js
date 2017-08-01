@@ -20,7 +20,8 @@ KISSY.config('requires',{
         "./history/history"
     ],
     "apebook/detail": [
-        "./detail/summary"
+        "./detail/summary",
+        "./detail/main"
     ],
     "apebook/gitbook": [
         "io",
@@ -49,10 +50,6 @@ KISSY.config('requires',{
         "kg/auth/2.0.9/plugin/msgs/",
         "kg/auth/2.0.9/plugin/msgs/style.css",
         "io"
-    ],
-    "apebook/common/login": [
-        "node",
-        "kg/modal/1.5.2/index"
     ],
     "apebook/bundle/dropdown": [
         "jquery"
@@ -109,6 +106,10 @@ KISSY.config('requires',{
         "lodash",
         "./events"
     ],
+    "apebook/common/login": [
+        "node",
+        "kg/modal/1.5.2/index"
+    ],
     "apebook/dash/cover": [
         "node"
     ],
@@ -116,6 +117,10 @@ KISSY.config('requires',{
         "node",
         "io",
         "kg/notification/1.0.0/"
+    ],
+    "apebook/detail/main": [
+        "node",
+        "io"
     ],
     "apebook/detail/summary": [
         "node"
